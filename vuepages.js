@@ -14,7 +14,7 @@ var vuepages = vuepages || {};
 				  <p>{{ content }}</p>\
 				  <slot></slot>\
 				</div>\
-				';
+				'
 	})
 	
 	Vue.component('homepage', {
@@ -44,7 +44,7 @@ var vuepages = vuepages || {};
 				</page-section>\
 			  </div>\
 			  \
-			</div>';
+			</div>'
 	});
 
 })(vuepages);
