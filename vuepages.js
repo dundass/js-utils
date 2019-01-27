@@ -6,7 +6,7 @@ var vuepages = vuepages || {};
 	
 	Vue.component('page-section', {
 		props: ['title', 'content'],
-		data
+		data: function() { return {} },
 		methods: {},
 		template:
 			'<div class="section">\
