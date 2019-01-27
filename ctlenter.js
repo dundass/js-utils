@@ -17,9 +17,4 @@ var ctlenter = ctlenter || {};
 			return ctrlPressed && enterPressed;
 		};
 	
-	
-	// if(document && window && !window.hasOwnProperty('p5')) {
-		// document.addEventListener();
-	// }
-	
 })(ctlenter);
