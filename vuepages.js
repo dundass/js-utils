@@ -18,7 +18,7 @@ var vuepages = vuepages || {};
 	})
 	
 	Vue.component('homepage', {
-		props: ['title', 'headerimage', 'mailto', 'sections'],
+		props: ['title', 'headerimage', 'mailto', 'contactblurb', 'sections'],
 		data: function() { return {} },
 		methods: {},
 		template: 
@@ -36,6 +36,7 @@ var vuepages = vuepages || {};
 				<page-section v-for="section in sections" v-bind:title="section.title" v-bind:paragraphs="section.paragraphs">{{section.slot ? section.slot : \'\'}}</page-section>\
 				<slot></slot>\
 				<page-section v-bind:title="\'contact\'">\
+				  <p>{{contactblurb}}</p>\
 				  <p>\
 					<a v-bind:href="mailto">\
 					{{mailto}}\
