@@ -11,7 +11,7 @@ var vuepages = vuepages || {};
 		template:
 			'<div class="section">\
 				  <h2>{{ title }}</h2>\
-				  <p v-for="paragraph in paragraphs">{{ paragraph }}</p>\
+				  <p v-for="paragraph in paragraphs" v-html="paragraph"></p>\
 				  <slot></slot>\
 				</div>\
 				'
